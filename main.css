@@ -15,9 +15,9 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
 .topNavBar nav>ul{list-style: none;margin: 0;padding: 0;}
 .topNavBar nav>ul>li{float: left;margin-left: 17px;margin-right: 17px;position: relative;}
 .topNavBar nav>ul>li>a{font-size: 12px;color: inherit;font-weight: bold;border-top: 3px solid transparent;padding-top: 5px;padding-bottom: 5px;display: block;position: relative;}
-.topNavBar nav>ul>li>a:hover::after {
+.topNavBar nav > ul > li.active > a::after {
     content: '';
-    display: ruby;
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -39,14 +39,27 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
 .topNavBar .submenu{
     display: none;
     position: absolute;
-    left: 0;
-    top: 100%;
+    right: 0;
+    top: 112%;
+    background: white;
+    color: #3d4451;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-.topNavBar .submenu.active{
+.topNavBar li.active> .submenu{
     display: block;
+    animation: submenuSlide .3s;
+}
+@keyframes submenuSlide{
+    0%{
+        margin-right: 100%;
+    }
+    100%{
+        margin-right: 0%;
+    }
 }
 .topNavBar .submenu > li{
     white-space: nowrap;
+    padding: 5px 10px;
 }
 
 
