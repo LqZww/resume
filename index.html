@@ -282,7 +282,7 @@
 				// let t = 500 / n //多长时间动一次
 				let currentTop = window.scrollY
 				let targetTop = top - 80
-				let s = targetTop - currentTop
+				let s = targetTop - currentTop	//路程
 				// let S = s / n
 				// let i = 0
 				// let id = setInterval(() => {
@@ -294,18 +294,18 @@
 				// 	window.scrollTo(0, currentTop + S * i)
 				// }, t)
 
-				var coords = { y: currentTop };
-				var t = Math.abs((s / 100) * 300)
+				var coords = { y: currentTop };	//起始位置
+				var t = Math.abs((s / 100) * 300)	//时间
 				if (t > 500) {
 					t = 500
 				}
-				var tween = new TWEEN.Tween(coords)
-					.to({ y: targetTop }, t)
-					.easing(TWEEN.Easing.Quadratic.InOut)
+				var tween = new TWEEN.Tween(coords)		//起始位置
+					.to({ y: targetTop }, t)		//结束位置和时间
+					.easing(TWEEN.Easing.Quadratic.InOut)	//缓动类型
 					.onUpdate(function () {
-						window.scrollTo(0, coords.y)
+						window.scrollTo(0, coords.y)	//如何更新界面
 					})
-					.start();
+					.start();	//开始缓动
 			}
 		}
 	</script>
