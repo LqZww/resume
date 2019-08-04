@@ -170,24 +170,27 @@
 
 
 		<!--轮播-->
+		<!--这就是View，用户看得见的东西-->
 		<!-- Slider main container -->
-		<div class="swiper-container">
-			<!-- Additional required wrapper -->
-			<div class="swiper-wrapper">
-				<!-- Slides -->
-				<img src="./img/works/nav-page.png" class="swiper-slide">
-				<img src="./img/works/canvas.png" class="swiper-slide">
-				<img src="./img/works/apple-style-slides.png" class="swiper-slide">
+		<div id="mySlides">
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<img src="./img/works/nav-page.png" class="swiper-slide">
+					<img src="./img/works/canvas.png" class="swiper-slide">
+					<img src="./img/works/apple-style-slides.png" class="swiper-slide">
+
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
 
 			</div>
-			<!-- If we need pagination -->
-			<div class="swiper-pagination"></div>
-
-
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
 		</div>
-		<!-- If we need navigation buttons -->
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
 
 	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
