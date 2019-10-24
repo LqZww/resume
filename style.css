@@ -147,7 +147,7 @@ h6 {
     }
 }
 
-.topNavBar .submenu {
+/* .topNavBar .submenu {
     display: none;
     position: absolute;
     right: 0;
@@ -175,8 +175,7 @@ h6 {
 .topNavBar .submenu>li {
     white-space: nowrap;
     padding: 5px 10px;
-}
-
+} */
 
 .topNavBar .logo {
     font-size: 24px;
@@ -345,7 +344,9 @@ body>main .downloadResume:hover {
 }
 
 section.skills,
-section.portfolio {
+section.portfolio,
+section.myblog,
+section.mytouch {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
@@ -354,7 +355,9 @@ section.portfolio {
 
 section.skills>h2,
 section.message>h2,
-section.portfolio>h2 {
+section.portfolio>h2,
+section.myblog>h2,
+section.mytouch>h2 {
     text-align: center;
     color: #3d4452;
     font-size: 34px;
@@ -436,6 +439,24 @@ section.portfolio .swiper-button-next {
     right: auto;
 }
 
+.myblog>p,
+.mytouch>p {
+    display: flex;
+    justify-content: center;
+    margin: 32px auto;
+}
+
+.myblog>p>a {
+    font-family: kaiti;
+    line-height: 1.8;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section.message>h2 {
+    margin-bottom: 20px;
+}
+
 section.message>ol {
     max-width: 700px;
     margin: 0 auto;
@@ -454,18 +475,4 @@ section.message>ol>li {
 
 .submit {
     margin: 0 10px;
-}
-
-/* 博客 */
-.message>p {
-    display: flex;
-    justify-content: center;
-    margin: 30px auto;
-}
-
-.message>p>a {
-    font-family: kaiti;
-    line-height: 1.8;
-    font-size: 20px;
-    font-weight: bold;
 }
