@@ -8,7 +8,7 @@
 	<title>周万文个人简历</title>
 	<script src="//at.alicdn.com/t/font_1088615_lwq2f37xbu9.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -34,14 +34,16 @@
 							<li>作品3</li>
 						</ul>
 					</li>
+
 					<li>
-						<a href="#">博客</a>
-						<ul class="submenu">
+						<a href="#blog">博客</a>
+						<!-- <ul class="submenu">
 							<li>博客1</li>
 							<li>博客2</li>
 							<li>博客3</li>
-						</ul>
+						</ul> -->
 					</li>
+
 					<li>
 						<a href="#">日历</a>
 					</li>
@@ -49,7 +51,7 @@
 						<a href="#">联系方式</a>
 					</li>
 					<li>
-						<a href="#">其他</a>
+						<a href="#leave-word">在线留言</a>
 					</li>
 				</ul>
 			</nav>
@@ -60,12 +62,10 @@
 	</div>
 
 	<main>
-
-
 		<div data-x id="siteAbout" class="userCard">
 			<div class="pictureAndText clearfix">
 				<div class="picture">
-					<img src="./img/avatar.jpg" width=299 height=347 alt="头像">
+					<img src="./img/avatar.jpg" width=299 height=347 alt="个人头像">
 				</div>
 				<div class="text">
 
@@ -73,7 +73,7 @@
 						<span class="triangle"></span>
 					</span>
 					<h1>周万文</h1>
-					<p>前端工程师</p>
+					<p>应聘前端工程师</p>
 					<hr>
 					<dl>
 						<dt>年龄</dt>
@@ -93,7 +93,7 @@
 						<use xlink:href="#icon-github"></use>
 					</svg>
 				</a>
-				<a href="#">
+				<a href="https://zhouwanwen.top/">
 					<svg class="icon" aria-hidden="true">
 						<use xlink:href="#icon-blog"></use>
 					</svg>
@@ -127,7 +127,7 @@
 	</main>
 
 	<section data-x id="siteSkills" class="skills">
-		<h2>个人技能</h2>
+		<h2>技能展示</h2>
 		<ol class="clearfix">
 			<li>
 				<h3>HTML</h3>
@@ -150,7 +150,7 @@
 			<li>
 				<h3>jQuery</h3>
 				<div class="progressBar">
-					<div class="progress" style="width:50%"></div>
+					<div class="progress" style="width:30%"></div>
 				</div>
 			</li>
 			<li>
@@ -169,8 +169,7 @@
 	</section>
 
 	<section data-x id="siteWorks" class="portfolio">
-		<h2>作品集</h2>
-
+		<h2>作品库</h2>
 
 		<!--轮播-->
 		<!--这就是View，用户看得见的东西-->
@@ -182,12 +181,15 @@
 					<!-- Slides -->
 					<img src="./img/works/nav-page.png" class="swiper-slide">
 					<img src="./img/works/canvas.png" class="swiper-slide">
-					<img src="./img/works/apple-style-slides.png" class="swiper-slide">
+					<img src="./img/works/apple-style-slides.jpg" class="swiper-slide">
 					<img src="./img/works/pikachu.jpg" class="swiper-slide">
+					<img src="./img/works/img-bed.jpg" class="swiper-slide">
+					<img src="./img/works/Translation-applet.png" class="swiper-slide">
+					<img src="./img/works/taobao.jpg" class="swiper-slide">
+					<img src="./img/works/miaodu-app.png" class="swiper-slide">
 				</div>
 				<!-- If we need pagination -->
 				<div class="swiper-pagination"></div>
-
 
 			</div>
 			<!-- If we need navigation buttons -->
@@ -197,16 +199,23 @@
 
 	</section>
 
-	<section class="message">
-		<h2>留言</h2>
+	<section data-x class="message" id="blog">
+		<h2>博客</h2>
+		<p class="blog">
+			<a href="https://zhouwanwen.top/" target="_black">个人博客</a>
+		</p>
+	</section>
+
+	<section data-x class="message" id="leave-word">
+		<h2>在线留言</h2>
 		<ol id="messageList">
 		</ol>
 		<form id="postMessageForm" style="width: 700px;margin:50px auto;">
-			<label for="">姓名</label>
+			<label for="">姓名：</label>
 			<input type="text" name="name">
-			<label for="">内容</label>
+			<label for="">留言内容：</label>
 			<input type="text" name="content">
-			<input type="submit" value="提交">
+			<input class="submit" type="submit" value="提交">
 		</form>
 	</section>
 
@@ -221,7 +230,6 @@
 	<script src="./js/smoothly-navigation.js"></script>
 
 	<script src="./js/message.js"></script>
-
 </body>
 
 </html>

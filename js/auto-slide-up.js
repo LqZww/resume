@@ -10,7 +10,6 @@
         findClosestAndRemoveOffset()
     })
 
-
     //helper
     function findClosestAndRemoveOffset() {
         let specialTags = document.querySelectorAll('[data-x]')

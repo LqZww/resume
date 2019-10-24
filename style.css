@@ -1,5 +1,4 @@
 body {
-    /* background-color: grey; */
     margin: 0;
     background: #efefef;
 }
@@ -244,6 +243,10 @@ h6 {
     float: left;
 }
 
+.userCard .picture img {
+    border-radius: 10px;
+}
+
 .userCard .text {
     float: left;
     margin-left: 65px;
@@ -384,7 +387,6 @@ section.skills>ol>li:nth-child(even) {
 
 section.skills .progressBar {
     height: 5px;
-    /* border: 1px solid #E6686A; */
     background: #FAE1E1;
     border-radius: 2px;
     margin: 4px 0 40px;
@@ -434,7 +436,6 @@ section.portfolio .swiper-button-next {
     right: auto;
 }
 
-
 section.message>ol {
     max-width: 700px;
     margin: 0 auto;
@@ -444,4 +445,27 @@ section.message>ol {
 section.message>ol>li {
     padding: 16px;
     border-bottom: 1px solid #ddd;
+}
+
+#postMessageForm>label {
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.submit {
+    margin: 0 10px;
+}
+
+/* 博客 */
+.message>p {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.message>p>a {
+    font-family: kaiti;
+    line-height: 1.8;
+    font-size: 20px;
+    font-weight: bold;
 }
