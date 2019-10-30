@@ -476,3 +476,19 @@ section.message>ol>li {
 .submit {
     margin: 0 10px;
 }
+
+.menu1 {
+    display: none;
+}
+
+@media (max-width:964px) {
+    .pictureAndText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    hr {
+        width: 400px;
+    }
+}
